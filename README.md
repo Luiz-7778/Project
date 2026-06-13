@@ -1,172 +1,121 @@
-<div align="center">
+# 🎨 PixelForge
 
-```bash
-> booting profile...
+> Editor de Pixel Art desenvolvido em Python para criação de sprites de jogos 2D.
 
-[ OK ] Curiosidade carregada
-[ OK ] Vontade de aprender carregada
-[ OK ] Café detectado ☕
-[ OK ] Modo Geek ativado 🚀
-```
-
-# 👨‍💻 root@github:~$
-
-<img src="https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&size=24&duration=3000&color=00FF88&center=true&vCenter=true&width=700&lines=Olá,+eu+sou+Luiz;Desenvolvedor+em+evolução;Apaixonado+por+Tecnologia;Transformando+café+em+código" />
-
-</div>
+![Status](https://img.shields.io/badge/Status-Em%20Desenvolvimento-00ff88?style=for-the-badge)
+![Python](https://img.shields.io/badge/Python-3.12+-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![Tkinter](https://img.shields.io/badge/Tkinter-GUI-blue?style=for-the-badge)
 
 ---
 
-# 🛰️ Sobre Mim
+## 🚀 Sobre o Projeto
 
-```yaml
-Nome: [Luiz felipe]
-Status: Aprendendo e evoluindo
-Localização: Planeta Terra 🌎
-Classe: Desenvolvedor Iniciante
-Missão: Construir projetos incríveis
-Combustível: Chocolate 🍫
-XP Atual: +999 por dia
-```
+O **PixelForge** é um editor de Pixel Art criado para auxiliar no desenvolvimento de jogos 2D.
+
+Com ele é possível criar sprites personalizados através de uma grade de pixels, escolher cores e exportar as artes em formato PNG.
 
 ---
 
-# ⚡ Stack em Evolução
+## ⚡ Funcionalidades
 
-<div align="center">
+✅ Grade de desenho 16x16
 
-<img src="https://skillicons.dev/icons?i=html,css,js,git,github,vscode,linux" />
+✅ Seleção de cores
 
-</div>
+✅ Pintura por clique
+
+✅ Limpeza da tela
+
+✅ Exportação para PNG
+
+✅ Interface simples e intuitiva
 
 ---
 
-# 📡 Sistema de Habilidades
+## 🖼️ Demonstração
 
 ```text
-HTML       ██████████░░░░░░░░░ 50%
-
-CSS        █████████░░░░░░░░░░ 45%
-
-JavaScript ██████░░░░░░░░░░░░░ 30%
-
-Git        ███████░░░░░░░░░░░░ 35%
-
-GitHub     ████████░░░░░░░░░░░ 40%
-
-Bug Fixing ████████████████░░░ 80%
++----------------------+
+| 🎨 PixelForge        |
++----------------------+
+| ⬜⬜🟩🟩⬜⬜⬜⬜ |
+| ⬜🟩🟩🟩🟩⬜⬜⬜ |
+| 🟩🟩⬛⬛🟩🟩⬜⬜ |
+| 🟩⬛⬜⬜⬛🟩⬜⬜ |
+| 🟩🟩🟩🟩🟩🟩⬜⬜ |
++----------------------+
 ```
 
 ---
 
-# 🧠 Conhecimentos Explorando
+## 🛠️ Tecnologias Utilizadas
 
 ```python
-learning = [
-    "Frontend",
-    "JavaScript",
-    "React",
+Tecnologias = [
+    "Python",
+    "Tkinter",
+    "Pillow",
     "Git",
-    "GitHub",
-    "APIs",
-    "UI/UX",
-    "Open Source"
+    "GitHub"
 ]
-
-for skill in learning:
-    print(f"Aprendendo {skill}...")
 ```
 
 ---
 
-# 🎮 Missões Atuais
+## 📂 Estrutura do Projeto
 
-- 🟢 Criar projetos para portfólio
-- 🟢 Aprender React
-- 🟢 Melhorar lógica de programação
-- 🟢 Contribuir para Open Source
-- 🟢 Conseguir primeira oportunidade na área
-
----
-
-# 📊 Estatísticas do Sistema
-
-<div align="center">
-
-<img height="170" src="https://github-readme-stats.vercel.app/api?username=Luiz&show_icons=true&theme=radical"/>
-
-<img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Luiz&layout=compact&theme=radical"/>
-
-</div>
-
----
-
-# 🔥 Histórico de Atividade
-
-<div align="center">
-
-<img src="https://streak-stats.demolab.com?user=SEU_USUARIO&theme=radical"/>
-
-</div>
+```text
+PixelForge/
+│
+├── assets/
+│   ├── icons/
+│   └── sprites/
+│
+├── src/
+│   ├── editor.py
+│   ├── canvas.py
+│   ├── tools.py
+│   └── export.py
+│
+├── README.md
+└── requirements.txt
+```
 
 ---
 
-# 🐍 Contribuições
+## 🔮 Melhorias Futuras
 
-<div align="center">
-
-<img src="https://raw.githubusercontent.com/Platane/snk/output/github-contribution-grid-snake-dark.svg" />
-
-</div>
+- [ ] Borracha
+- [ ] Conta-gotas
+- [ ] Zoom
+- [ ] Paleta personalizada
+- [ ] Animação Frame by Frame
+- [ ] Exportação Sprite Sheet
+- [ ] Tema Cyberpunk
+- [ ] Sistema de Camadas
 
 ---
 
-# 🌌 Easter Eggs Favoritos
+## 💻 Executando
 
 ```bash
-sudo make me a developer
+git clone https://github.com/SEU_USUARIO/PixelForge.git
 
-[sudo] password:
+cd PixelForge
 
-********
+pip install -r requirements.txt
 
-Access Granted ✔
-
-Welcome to the tech world 🚀
-```
-
-```javascript
-const future = {
-  profession: "Software Developer",
-  status: "Loading...",
-  progress: "████████░░░░ 60%"
-}
+python main.py
 ```
 
 ---
 
-# 📬 Comunicação
+## 📈 Objetivo
 
-<div align="center">
+Este projeto faz parte da minha jornada de aprendizado em desenvolvimento de software e criação de ferramentas para jogos.
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](SEU_LINKEDIN)
-
-[![Gmail](https://img.shields.io/badge/Gmail-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:SEU_EMAIL)
-
-</div>
+Cada atualização representa um novo aprendizado e uma nova funcionalidade implementada.
 
 ---
 
-<div align="center">
-
-```diff
-+ Sempre aprendendo
-+ Sempre construindo
-+ Sempre evoluindo
-
-# Version: v1.0.0-beta
-```
-
-⭐ Obrigado por visitar meu perfil!
-
-</div>
+⭐ Se gostou do projeto, deixe uma estrela no repositório!
