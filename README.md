@@ -1,121 +1,190 @@
-# 🎨 PixelForge
-
-> Editor de Pixel Art desenvolvido em Python para criação de sprites de jogos 2D.
-
-![Status](https://img.shields.io/badge/Status-Em%20Desenvolvimento-00ff88?style=for-the-badge)
-![Python](https://img.shields.io/badge/Python-3.12+-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![Tkinter](https://img.shields.io/badge/Tkinter-GUI-blue?style=for-the-badge)
-
----
-
-## 🚀 Sobre o Projeto
-
-O **PixelForge** é um editor de Pixel Art criado para auxiliar no desenvolvimento de jogos 2D.
-
-Com ele é possível criar sprites personalizados através de uma grade de pixels, escolher cores e exportar as artes em formato PNG.
-
----
-
-## ⚡ Funcionalidades
-
-✅ Grade de desenho 16x16
-
-✅ Seleção de cores
-
-✅ Pintura por clique
-
-✅ Limpeza da tela
-
-✅ Exportação para PNG
-
-✅ Interface simples e intuitiva
-
----
-
-## 🖼️ Demonstração
-
-```text
-+----------------------+
-| 🎨 PixelForge        |
-+----------------------+
-| ⬜⬜🟩🟩⬜⬜⬜⬜ |
-| ⬜🟩🟩🟩🟩⬜⬜⬜ |
-| 🟩🟩⬛⬛🟩🟩⬜⬜ |
-| 🟩⬛⬜⬜⬛🟩⬜⬜ |
-| 🟩🟩🟩🟩🟩🟩⬜⬜ |
-+----------------------+
-```
-
----
-
-## 🛠️ Tecnologias Utilizadas
-
-```python
-Tecnologias = [
-    "Python",
-    "Tkinter",
-    "Pillow",
-    "Git",
-    "GitHub"
-]
-```
-
----
-
-## 📂 Estrutura do Projeto
-
-```text
-PixelForge/
-│
-├── assets/
-│   ├── icons/
-│   └── sprites/
-│
-├── src/
-│   ├── editor.py
-│   ├── canvas.py
-│   ├── tools.py
-│   └── export.py
+Fantasy-Female-Character-Generator/
 │
 ├── README.md
-└── requirements.txt
-```
+├── LICENSE
+├── prompts/
+│   ├── armor.md
+│   ├── clothing.md
+│   ├── personalities.md
+│   ├── weapons.md
+│   └── styles.md
+│
+├── data/
+│   ├── characters.json
+│   ├── armors.json
+│   ├── swords.json
+│   └── outfits.json
+│
+├── examples/
+│   ├── knight.md
+│   ├── mage.md
+│   ├── assassin.md
+│   └── samurai.md
+│
+└── generator.py
 
----
+{
+  "name": "Alyssia",
+  "age": 24,
+  "race": "Elf",
+  "height": "1.72m",
+  "hair": {
+    "color": "Silver",
+    "style": "Long with braided ponytail"
+  },
+  "eyes": {
+    "color": "Crimson",
+    "effect": "Glowing"
+  },
+  "personality": [
+    "Calm",
+    "Strategic",
+    "Loyal",
+    "Fearless"
+  ],
+  "style": "Dark Fantasy",
+  "clothing": {
+    "upper": "Black leather corset",
+    "lower": "Long armored skirt",
+    "boots": "Steel boots",
+    "cape": "Dark red cape"
+  },
+  "armor": {
+    "type": "Mythril",
+    "color": "Black and Silver",
+    "details": "Dragon engravings"
+  },
+  "weapon": {
+    "type": "Great Sword",
+    "name": "Night Eclipse",
+    "material": "Obsidian",
+    "magic": "Shadow Flames"
+  }
+}
 
-## 🔮 Melhorias Futuras
+import random
+import json
 
-- [ ] Borracha
-- [ ] Conta-gotas
-- [ ] Zoom
-- [ ] Paleta personalizada
-- [ ] Animação Frame by Frame
-- [ ] Exportação Sprite Sheet
-- [ ] Tema Cyberpunk
-- [ ] Sistema de Camadas
+hair_colors = [
+    "Silver",
+    "Black",
+    "White",
+    "Blue",
+    "Pink",
+    "Golden"
+]
 
----
+eye_colors = [
+    "Red",
+    "Blue",
+    "Purple",
+    "Emerald",
+    "Amber"
+]
 
-## 💻 Executando
+classes = [
+    "Knight",
+    "Mage",
+    "Samurai",
+    "Assassin",
+    "Paladin",
+    "Archer"
+]
 
-```bash
-git clone https://github.com/SEU_USUARIO/PixelForge.git
+armors = [
+    "Dragon Armor",
+    "Mythril Armor",
+    "Shadow Armor",
+    "Crystal Armor"
+]
 
-cd PixelForge
+weapons = [
+    "Long Sword",
+    "Katana",
+    "Magic Sword",
+    "Rapier",
+    "Great Sword"
+]
 
-pip install -r requirements.txt
+personalities = [
+    "Brave",
+    "Calm",
+    "Intelligent",
+    "Cold",
+    "Kind",
+    "Strategic",
+    "Loyal",
+    "Determined"
+]
 
-python main.py
-```
+character = {
+    "Class": random.choice(classes),
+    "Hair": random.choice(hair_colors),
+    "Eyes": random.choice(eye_colors),
+    "Armor": random.choice(armors),
+    "Weapon": random.choice(weapons),
+    "Personality": random.sample(personalities, 3)
+}
 
----
+print(json.dumps(character, indent=4))
 
-## 📈 Objetivo
+Create a highly detailed female fantasy character.
 
-Este projeto faz parte da minha jornada de aprendizado em desenvolvimento de software e criação de ferramentas para jogos.
+Requirements:
 
-Cada atualização representa um novo aprendizado e uma nova funcionalidade implementada.
+• Beautiful anime style
+• Ultra detailed
+• 8K quality
+• Cinematic lighting
+• Full body
+• Dynamic pose
+• Highly detailed face
+• Highly detailed eyes
 
----
+Appearance:
+- Long elegant hair
+- Bright expressive eyes
+- Athletic body
+- Graceful posture
 
-⭐ Se gostou do projeto, deixe uma estrela no repositório!
+Clothing:
+- Detailed fantasy outfit
+- Premium fabrics
+- Gold embroidery
+- Decorative belts
+- Cape
+- Gloves
+- Boots
+
+Armor:
+- Ornate shoulder armor
+- Chest plate
+- Arm guards
+- Leg armor
+- Mythril or Dragon Steel
+- Magical glowing runes
+
+Weapon:
+- Legendary sword
+- Glowing blade
+- Ancient engravings
+- Floating magical particles
+- Jewel embedded hilt
+
+Style:
+- Dark Fantasy
+- Medieval Fantasy
+- JRPG
+- Genshin Impact inspired
+- Final Fantasy inspired
+
+Personality:
+- Calm
+- Elegant
+- Intelligent
+- Fearless
+- Protective
+- Loyal
+
+Background:
+Standing on an ancient castle bridge during sunset with magical particles floating in the air.
